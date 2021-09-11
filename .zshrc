@@ -22,6 +22,3 @@ fi
 if [[ ! -n $TMUX ]]; then
 	tmux new-session && exit
 fi
-
-export PATH=$PATH:/snap/bin
-
