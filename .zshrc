@@ -15,6 +15,17 @@ antigen theme robbyrussell
 antigen apply
 
 
+# Add user's private bin to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# CUDA
+export PATH="/usr/local/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+
+# Snap
+export PATH="/snap/bin:$PATH"
+
+# tmux
 if [[ ! -n $TMUX ]]; then
 	tmux new-session
 fi
